@@ -38,7 +38,7 @@ class L4DatabaseServiceProvider extends ServiceProvider
             return new TableCommand($app['files'], $app['composer']);
         });
 
-        $this->command('command.queue.table');
+        $this->commands('command.queue.table');
     }
 
     /**
