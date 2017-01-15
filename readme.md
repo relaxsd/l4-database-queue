@@ -5,7 +5,7 @@ Adds a 'database' queue driver to Laravel 4.
 ### Installation
 Use `composer require` to add this package to your `composer.json` file and install it:
 
-    composer require relaxsd/l4-database-queue:^0.5
+    composer require relaxsd/l4-database-queue:^1.0
 
 Add the Service Provider to the providers array in config/app.php. 
 Make sure to add it after the `Illuminate\Queue\QueueServiceProvider`.
