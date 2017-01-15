@@ -1,0 +1,29 @@
+{
+  "name": "relaxsd/l4-database-queue",
+  "description": "laravel 4 'database' queue",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Martijn Kriek",
+      "email": "martijn.kriek@relax-software.nl"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/console": "~4.2",
+    "illuminate/database": "~4.2",
+    "illuminate/filesystem": "~4.2",
+    "illuminate/queue": "~4.2",
+    "illuminate/support": "~4.2"
+  },
+  "require-dev": {
+    "mockery/mockery": "~0.9.4",
+    "phpunit/phpunit": "~5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Relaxsd\\Queue\\": "src/"
+    }
+  },
+  "minimum-stability": "dev"
+}
