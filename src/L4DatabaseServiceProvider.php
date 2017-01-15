@@ -22,9 +22,16 @@ class L4DatabaseServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerQueueTableCommand();
+    }
 
+    /**
+     * Bootstrap the application events.
+     *
+     * @return void
+     */
+    public function boot() {
+        // Use boot(0 because app['queue'] is may not be available during register().
         $this->registerDatabaseConnector($this->app['queue']);
-
     }
 
     /**
